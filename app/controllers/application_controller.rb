@@ -61,7 +61,6 @@ class ApplicationController < Sinatra::Base
 
     new_balance = current_user.balance + params[:deposit].to_i - params[:withdrawal].to_i
     if new_balance < 0
-      # current_user.balance
       redirect '/account'
     else
     current_user.update(balance: new_balance)
