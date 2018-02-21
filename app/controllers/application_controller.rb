@@ -64,7 +64,7 @@ class ApplicationController < Sinatra::Base
     #   redirect '/account'
     # else
     current_user.update(balance: new_balance)
-    erb :account
+    # erb :account
     # end
   end
 
