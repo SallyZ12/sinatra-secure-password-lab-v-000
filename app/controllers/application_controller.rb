@@ -64,9 +64,9 @@ class ApplicationController < Sinatra::Base
       redirect '/account'
     else
     current_user.update(balance: new_balance)
-  end
+
     erb :account
-    # end
+    end
   end
 
   get "/failure" do
